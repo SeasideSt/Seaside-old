@@ -6,4 +6,4 @@ This is an experimental repository. Please use the [Smalltalkhub repository](htt
 
 Build status
 =======
-master: https://travis-ci.org/SeasideSt/Seaside.svg?branch=master
+dev/seaside32: https://travis-ci.org/SeasideSt/Seaside.svg?branch=dev%2Fseaside32
