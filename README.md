@@ -4,6 +4,5 @@ The framework for developing sophisticated web applications in Smalltalk. See ht
 
 This is an experimental repository. Please use the [Smalltalkhub repository](http://www.smalltalkhub.com/#!/~Seaside).
 
-Build status
-=======
-master: https://travis-ci.org/SeasideSt/Seaside.svg?branch=master
+## Build Status
+ - [![master branch (pharo/squeak):](https://travis-ci.org/SeasideSt/Seaside.svg?branch=master)](https://travis-ci.org/SeasideSt/Seaside)  master (Pharo/Squeak)
