@@ -84,6 +84,26 @@ baselinepharo: spec
 			package: 'Seaside-Pharo-Email' with: [
 				spec requires: #('Seaside-Email' 'Seaside-Pharo20-Core' ) ] ].
 		
+	spec for: #(#'pharo4.x') do: [
+		spec
+			package: 'Seaside-Tools-Web' with: [
+				spec includes: #('Seaside-Pharo20-Tools-Web') ];
+			package: 'Seaside-Pharo-Development'  with: [
+				spec requires: #('Seaside-Development' 'Seaside-Pharo20-Tools-Web' 'Seaside-Pharo-Flow') ];
+			package: 'Seaside-Pharo20-Tools-Web' with: [
+				spec requires: #('Seaside-Tools-Web' 'Seaside-Core' 'Seaside-Canvas') ].
+		spec 
+			package: 'Seaside-Core' with: [
+				spec includes: #('Seaside-Pharo20-Core' ) ];
+			package: 'Seaside-Pharo20-Core' with: [
+				spec requires: #('Seaside-Core' ). ];
+			package: 'Seaside-Tests-Core' with: [
+				spec includes: #('Seaside-Tests-Pharo40-Core' ) ];
+			package: 'Seaside-Tests-Pharo40-Core' with: [
+				spec requires: #('Seaside-Pharo20-Core' 'Seaside-Tests-Core' ) ];
+			package: 'Seaside-Pharo-Email' with: [
+				spec requires: #('Seaside-Email' 'Seaside-Pharo20-Core' ) ] ].
+		
 	"Spec based tools"
 	spec for: #(#'pharo2.x' #'pharo3.x' #'pharo4.x') do: [
 		spec
