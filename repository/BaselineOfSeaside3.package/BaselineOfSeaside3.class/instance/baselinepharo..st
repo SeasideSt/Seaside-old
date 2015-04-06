@@ -22,13 +22,9 @@ baselinepharo: spec
 				spec includes: #('Seaside-Tests-Pharo-Functional' ). ];
 			package: 'Seaside-Pharo-Canvas' with: [
 				spec requires: #('Seaside-Core' 'Seaside-Canvas' ). ];
-			package: 'Seaside-Pharo-Continuation';
+
 			package: 'Seaside-Pharo-Environment' with: [
 				spec requires: #('Seaside-Environment' 'Seaside-Core' 'Seaside-Canvas' ). ];
-			package: 'Seaside-Pharo-Flow' with: [
-				spec requires: #('Seaside-Flow' 'Seaside-Pharo-Continuation' ). ];
-			package: 'Seaside-Tests-Pharo-Continuation' with: [
-				spec requires: #('Seaside-Pharo-Continuation' ). ];
 			package: 'Seaside-Tests-Pharo-Development' with: [
 				spec requires: #('Seaside-Tests-Development' 'Seaside-Pharo-Development' ). ];
 			package: 'Seaside-Tests-Email' with: [ 
@@ -43,14 +39,19 @@ baselinepharo: spec
 				spec requires: #('Seaside-Tests-Canvas' ). ] ].
 				
     spec for: #(#'squeak' #'pharo1.x')  do: [ 
-            spec
+    	spec
 			package: 'Seaside-Tools-Web' with: [
 				spec includes: #('Seaside-Pharo-Tools-Web') ];
 			package: 'Seaside-Pharo-Development' with: [
 				spec requires: #('Seaside-Development' 'Seaside-Pharo-Tools-Web' 'Seaside-Pharo-Flow') ];
 			package: 'Seaside-Pharo-Tools-Web' with: [
 				spec requires: #('Seaside-Tools-Web' 'Seaside-Core' 'Seaside-Canvas') ].
-		spec 
+		spec
+			package: 'Seaside-Pharo-Continuation';
+			package: 'Seaside-Pharo-Flow' with: [
+				spec requires: #('Seaside-Flow' 'Seaside-Pharo-Continuation' ). ];
+			package: 'Seaside-Tests-Pharo-Continuation' with: [
+				spec requires: #('Seaside-Pharo-Continuation' ). ];
 			package: 'Seaside-Core' with: [
 				spec includes: #('Seaside-Pharo-Core' ) ];
 			package: 'Seaside-Pharo-Core' with: [
@@ -72,7 +73,12 @@ baselinepharo: spec
 				spec requires: #('Seaside-Development' 'Seaside-Pharo20-Tools-Web' 'Seaside-Pharo-Flow') ];
 			package: 'Seaside-Pharo20-Tools-Web' with: [
 				spec requires: #('Seaside-Tools-Web' 'Seaside-Core' 'Seaside-Canvas') ].
-		spec 
+		spec
+			package: 'Seaside-Pharo-Continuation';
+			package: 'Seaside-Pharo-Flow' with: [
+				spec requires: #('Seaside-Flow' 'Seaside-Pharo-Continuation' ). ];
+			package: 'Seaside-Tests-Pharo-Continuation' with: [
+				spec requires: #('Seaside-Pharo-Continuation' ). ];
 			package: 'Seaside-Core' with: [
 				spec includes: #('Seaside-Pharo20-Core' ) ];
 			package: 'Seaside-Pharo20-Core' with: [
@@ -92,7 +98,12 @@ baselinepharo: spec
 				spec requires: #('Seaside-Development' 'Seaside-Pharo20-Tools-Web' 'Seaside-Pharo-Flow') ];
 			package: 'Seaside-Pharo20-Tools-Web' with: [
 				spec requires: #('Seaside-Tools-Web' 'Seaside-Core' 'Seaside-Canvas') ].
-		spec 
+		spec
+			package: 'Seaside-Pharo40-Continuation';
+			package: 'Seaside-Pharo-Flow' with: [
+				spec requires: #('Seaside-Flow' 'Seaside-Pharo40-Continuation' ). ];
+			package: 'Seaside-Tests-Pharo-Continuation' with: [
+				spec requires: #('Seaside-Pharo40-Continuation' ). ];
 			package: 'Seaside-Core' with: [
 				spec includes: #('Seaside-Pharo20-Core' ) ];
 			package: 'Seaside-Pharo20-Core' with: [
